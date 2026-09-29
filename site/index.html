@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Precission S.R.L. | Software a medida, apps y seguridad de identidades</title>
+  <meta name="description" content="Más de 15 años en el mercado de TI. Desarrollo de software a medida, consultoría, aplicaciones móviles, gestión de identidades y accesos (IAM/PAM) y outsourcing on-shore y off-shore. Santa Fe, Argentina.">
+  <meta name="theme-color" content="#0E0806">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Precission S.R.L.">
+  <meta property="og:description" content="Tecnología construida con precisión. Más de 15 años en el mercado de TI.">
+  <meta property="og:image" content="img/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Isotipo reutilizable -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <clipPath id="mark-q"><rect x="0" y="-400" width="400" height="400"/></clipPath>
+      <g id="mark-arrow">
+        <path d="M-60 0V-288Q-60-312-36-312H36Q60-312 60-288V0Z"/>
+        <path d="M0-60H288Q312-60 312-36V36Q312 60 288 60H0Z"/>
+        <g clip-path="url(#mark-q)"><rect x="0" y="-60" width="345" height="120" rx="36" transform="rotate(-45)"/></g>
+      </g>
+      <symbol id="mark" viewBox="-316 -316 632 632">
+        <use href="#mark-arrow" class="mark-white"/>
+        <use href="#mark-arrow" class="mark-orange" transform="rotate(180)"/>
+        <circle r="62" class="mark-dot"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="top">
+    <div class="nav__inner container">
+      <a href="#top" class="brand" aria-label="Precission, volver al inicio">
+        <svg class="brand__mark"><use href="#mark"/></svg>
+        <span class="brand__word">PRECISSION</span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#metodo">Cómo trabajamos</a>
+        <a href="#contacto" class="btn btn--small btn--primary">Hablemos</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#metodo">Cómo trabajamos</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="blob blob--peach" aria-hidden="true"></div>
+      <div class="blob blob--orange" aria-hidden="true"></div>
+
+      <div class="hero__inner container">
+        <div class="hero__copy">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span>Más de 15 años en el mercado de TI</p>
+          <h1 class="hero__title">
+            <span class="line"><span>Tecnología</span></span>
+            <span class="line"><span>construida con</span></span>
+            <span class="line"><span><em>precisión.</em></span></span>
+          </h1>
+          <p class="hero__lead reveal">
+            Desarrollamos software a medida, aplicaciones móviles y soluciones de identidad y accesos
+            para empresas y gobiernos que no pueden darse el lujo de fallar.
+          </p>
+          <div class="hero__ctas reveal">
+            <a href="#contacto" class="btn btn--primary">
+              Contanos tu proyecto
+              <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#proyectos" class="btn btn--ghost">Ver proyectos</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="orbit orbit--1"></div>
+          <div class="orbit orbit--2"></div>
+          <svg class="hero-mark" viewBox="-316 -316 632 632">
+            <g class="hero-mark__white"><use href="#mark-arrow" class="mark-white"/></g>
+            <g class="hero-mark__orange"><use href="#mark-arrow" class="mark-orange" transform="rotate(180)"/></g>
+            <circle r="62" class="mark-dot"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero__stats container">
+        <div class="stat reveal">
+          <span class="stat__num"><span data-count="15">0</span>+</span>
+          <span class="stat__label">años construyendo<br>soluciones de TI</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num"><span data-count="5">0</span></span>
+          <span class="stat__label">áreas de<br>especialización</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num">On &amp; Off</span>
+          <span class="stat__label">shore: equipos donde<br>los necesites</span>
+        </div>
+        <a href="#servicios" class="scroll-cue" aria-label="Ir a servicios">
+          <span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+
+
+    <!-- ================= SERVICIOS ================= -->
+    <section class="section services" id="servicios">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span>Qué hacemos</p>
+          <h2 class="section__title reveal">Todo lo que tu organización necesita para <em>crecer segura.</em></h2>
+        </div>
+
+        <div class="bento">
+          <article class="card card--lg reveal">
+            <span class="card__num">01</span>
+            <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="9" width="36" height="26" rx="3"/><path d="M18 41h12M24 35v6M17 19l-4 3 4 3M31 19l4 3-4 3M26 17l-4 10"/></svg>
+            <h3>Desarrollo de software a medida</h3>
+            <p>Plataformas web y sistemas de gestión diseñados alrededor de tus procesos, no al revés. Código mantenible, escalable y pensado para durar.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__num">02</span>
+            <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="21" cy="21" r="12"/><path d="M30 30l10 10M16 23l4-5 4 4 4-6"/></svg>
+            <h3>Consultoría</h3>
+            <p>Diagnóstico, arquitectura y hoja de ruta tecnológica para decidir con claridad y sin improvisar.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__num">03</span>
+            <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="5" width="20" height="38" rx="4"/><path d="M21 37h6M20 15h8M20 21h8M20 27h5"/></svg>
+            <h3>Aplicaciones móviles</h3>
+            <p>Apps para iOS y Android con experiencias simples, rápidas y confiables, listas para el uso diario.</p>
+          </article>
+
+          <article class="card card--feature reveal">
+            <span class="card__num">04</span>
+            <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l15 6v11c0 10-6.5 17.5-15 21-8.5-3.5-15-11-15-21V11z"/><circle cx="24" cy="21" r="4"/><path d="M24 25v7"/></svg>
+            <h3>Gestión del ciclo completo de accesos e identidades</h3>
+            <p>IAM y PAM sobre <strong>Active Directory, SAP y Google Workspace (GSuite)</strong>. Cada persona con el acceso justo, en el momento justo, con trazabilidad total.</p>
+            <ul class="tags">
+              <li>IAM</li><li>PAM</li><li>AD</li><li>SAP</li><li>GSuite</li>
+            </ul>
+          </article>
+
+          <article class="card card--wide reveal">
+            <span class="card__num">05</span>
+            <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18"/><path d="M6 24h36M24 6c5 5 7 11 7 18s-2 13-7 18M24 6c-5 5-7 11-7 18s2 13 7 18"/></svg>
+            <h3>Outsourcing development</h3>
+            <p>Equipos de desarrollo en modalidad <strong>on-shore y off-shore</strong> que se integran a tu organización y escalan al ritmo de tu demanda.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROYECTOS ================= -->
+    <section class="section projects" id="proyectos">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <p class="eyebrow eyebrow--dark reveal"><span class="eyebrow__dot"></span>Proyectos</p>
+            <h2 class="section__title reveal">Soluciones reales, <em>en uso todos los días.</em></h2>
+          </div>
+          <p class="section__aside reveal">Del gobierno a la seguridad privada y la salud: productos que diseñamos, construimos y acompañamos en producción.</p>
+        </div>
+
+        <div class="stack">
+          <!-- Portal Ciudadano -->
+          <article class="project" style="--accent:#1BA7D9; --accent-soft:#D6F1FA">
+            <div class="project__info">
+              <div class="project__meta">
+                <span class="project__index">01 <i>/ 03</i></span>
+                <span class="project__cat">GovTech · Smart Cities</span>
+              </div>
+              <img class="project__logo" src="img/projects/Portal_Ciudadano_marca.png" alt="Portal Ciudadano" width="640" height="351" loading="lazy">
+              <h3 class="project__title">Portal Ciudadano</h3>
+              <p class="project__desc">Herramienta de comunicación que colabora con los gobiernos y el ciudadano, contribuyendo en el desarrollo de <em>"ciudades más inteligentes"</em>.</p>
+              <ul class="chips">
+                <li>Trámites</li><li>Reclamos</li><li>Turnos</li><li>Noticias</li><li>Agenda</li>
+              </ul>
+              <a class="link-arrow" href="https://portalciudadano.com.ar/" target="_blank" rel="noopener">
+                Ver proyecto
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+            <div class="project__media">
+              <div class="project__halo"></div>
+              <img src="img/projects/Portal_Ciudadano.png" alt="Pantallas de la app Portal Ciudadano: trámites, reclamos, turnos y noticias" width="1596" height="1605" loading="lazy" data-parallax>
+            </div>
+          </article>
+
+          <!-- Argos -->
+          <article class="project" style="--accent:#3FBF7F; --accent-soft:#DCF3E6">
+            <div class="project__info">
+              <div class="project__meta">
+                <span class="project__index">02 <i>/ 03</i></span>
+                <span class="project__cat">Seguridad</span>
+              </div>
+              <img class="project__logo project__logo--svg" src="img/projects/Logo-Argos.svg" alt="Argos" loading="lazy">
+              <h3 class="project__title">Argos</h3>
+              <p class="project__desc">Tecnología aplicada al negocio de la seguridad. Panel web y app móvil para gestionar vigiladores, puestos y cobertura en tiempo real.</p>
+              <ul class="chips">
+                <li>Monitoreo en línea</li><li>Puestos de seguridad</li><li>Geolocalización</li><li>Web + Mobile</li>
+              </ul>
+              <a class="link-arrow" href="https://argosvigila.com.ar/" target="_blank" rel="noopener">
+                Ver proyecto
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+            <div class="project__media">
+              <div class="project__halo"></div>
+              <img src="img/projects/Argos.png" alt="Panel web y app móvil de Argos con vigiladores en línea y mapa de cobertura" width="1814" height="1156" loading="lazy" data-parallax>
+            </div>
+          </article>
+
+          <!-- KineMobile -->
+          <article class="project" style="--accent:#E0107A; --accent-soft:#FADCEB">
+            <div class="project__info">
+              <div class="project__meta">
+                <span class="project__index">03 <i>/ 03</i></span>
+                <span class="project__cat">Salud · App móvil</span>
+              </div>
+              <img class="project__logo project__logo--svg" src="img/projects/Logo-KineMobile.svg" alt="KineMobile" loading="lazy">
+              <h3 class="project__title">KineMobile</h3>
+              <p class="project__desc">Te presentamos la nueva app de la Rehabilitación Laboral: rutinas guiadas, objetivos y seguimiento del paciente, desde el celular.</p>
+              <ul class="chips">
+                <li>Rutinas guiadas</li><li>Seguimiento</li><li>Rehabilitación laboral</li>
+              </ul>
+            </div>
+            <div class="project__media">
+              <div class="project__halo"></div>
+              <img src="img/projects/KineMobil.png" alt="Pantallas de la app KineMobile con ejercicios de rehabilitación" width="1710" height="1643" loading="lazy" data-parallax>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MANIFIESTO ================= -->
+    <section class="section manifesto">
+      <div class="blob blob--manifesto" aria-hidden="true"></div>
+      <div class="container">
+        <p class="manifesto__text" data-words>
+          No hacemos software genérico. Hacemos el software exacto que tu organización necesita: seguro, escalable y hecho para durar.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= MÉTODO ================= -->
+    <section class="section method" id="metodo">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span>Cómo trabajamos</p>
+          <h2 class="section__title reveal">Un proceso claro, <em>de principio a fin.</em></h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3>Entendemos</h3>
+            <p>Escuchamos tu negocio, relevamos procesos y definimos objetivos medibles antes de escribir una línea de código.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3>Diseñamos</h3>
+            <p>Arquitectura, experiencia de usuario y seguridad planificadas desde el inicio, no como un parche al final.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3>Construimos</h3>
+            <p>Entregas iterativas y visibles. Vas viendo avances reales y validando cada paso junto al equipo.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3>Acompañamos</h3>
+            <p>Puesta en producción, soporte y evolución continua. Seguimos cerca cuando el proyecto ya está en uso.</p>
+          </li>
+        </ol>
+
+        <div class="pillars">
+          <div class="pillar reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l15 6v11c0 10-6.5 17.5-15 21-8.5-3.5-15-11-15-21V11z"/><path d="M17 24l5 5 9-10"/></svg>
+            <div>
+              <h4>Seguridad por diseño</h4>
+              <p>Nuestra experiencia en identidades y accesos se traslada a cada proyecto.</p>
+            </div>
+          </div>
+          <div class="pillar reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="2.5"/></svg>
+            <div>
+              <h4>Foco en el resultado</h4>
+              <p>Medimos el éxito por el impacto en tu operación, no por las horas.</p>
+            </div>
+          </div>
+          <div class="pillar reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="17" r="6"/><circle cx="33" cy="17" r="6"/><path d="M6 38c0-6 5-10 11-10s11 4 11 10M22 38c0-6 5-10 11-10s9 4 9 10"/></svg>
+            <div>
+              <h4>Cercanía real</h4>
+              <p>Un equipo que conocés, que responde y que se compromete con tu proyecto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="section contact" id="contacto">
+      <div class="blob blob--contact" aria-hidden="true"></div>
+      <div class="container contact__inner">
+        <div class="contact__copy">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span>¡Escribinos!</p>
+          <h2 class="contact__title reveal">¿Tenés un proyecto en mente? <em>Hagámoslo realidad.</em></h2>
+          <p class="contact__lead reveal">Envianos tus datos y pronto nos contactaremos con vos. Sin compromiso: primero entendemos lo que necesitás.</p>
+
+          <ul class="contact__list reveal">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>
+              <a href="tel:+5493424624067">+54 9 342 4624067</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0114 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <span>Santa Fe, Argentina</span>
+            </li>
+          </ul>
+
+          <div class="socials reveal">
+            <a href="https://www.linkedin.com/company/precission-s.r.l./about/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4v11H3zm7 0h3.8v1.5h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.46h-4v-4.84c0-1.16-.02-2.64-1.61-2.64-1.61 0-1.86 1.26-1.86 2.56v4.92H10z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/precissionsrl.argentina" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.55V4.47A20 20 0 0014.3 4.35c-2.23 0-3.8 1.37-3.8 3.87v2.28H8v3h2.5V21z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <input type="text" id="nombre" name="nombre" placeholder=" " autocomplete="name" required>
+            <label for="nombre">Nombre</label>
+            <span class="field__error">Contanos cómo te llamás.</span>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <input type="email" id="correo" name="correo" placeholder=" " autocomplete="email" required>
+              <label for="correo">Correo</label>
+              <span class="field__error">Ingresá un correo válido.</span>
+            </div>
+            <div class="field">
+              <input type="tel" id="telefono" name="telefono" placeholder=" " autocomplete="tel" pattern="[0-9+()\s-]{6,}">
+              <label for="telefono">Teléfono <small>(opcional)</small></label>
+              <span class="field__error">Revisá el número.</span>
+            </div>
+          </div>
+          <div class="field">
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder=" " required minlength="10"></textarea>
+            <label for="mensaje">Mensaje</label>
+            <span class="field__error">Contanos un poco más sobre tu proyecto.</span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">
+            <span class="btn__label">Enviar mensaje</span>
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="form__note">Tus datos se usan solo para responderte.</p>
+
+          <div class="form__success" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20"/><path d="M15 24l6 6 12-13"/></svg>
+            <h3>¡Gracias por escribirnos!</h3>
+            <p>Recibimos tu mensaje. Pronto nos contactaremos con vos.</p>
+            <button type="button" class="btn btn--ghost btn--small" data-reset>Enviar otro mensaje</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="brand" aria-label="Precission, volver al inicio">
+        <svg class="brand__mark"><use href="#mark"/></svg>
+        <span class="brand__word">PRECISSION</span>
+      </a>
+      <nav class="footer__links" aria-label="Pie de página">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#metodo">Cómo trabajamos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer__legal">© <span id="year">2026</span> Precission S.R.L. · Santa Fe, Argentina</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

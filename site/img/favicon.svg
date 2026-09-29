@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-316 -316 632 632">
+  <defs>
+    <clipPath id="q"><rect x="0" y="-400" width="400" height="400"/></clipPath>
+    <g id="arrow">
+      <path d="M-60 0V-288Q-60-312-36-312H36Q60-312 60-288V0Z"/>
+      <path d="M0-60H288Q312-60 312-36V36Q312 60 288 60H0Z"/>
+      <g clip-path="url(#q)"><rect x="0" y="-60" width="345" height="120" rx="36" transform="rotate(-45)"/></g>
+    </g>
+  </defs>
+  <use href="#arrow" fill="#FFFFFF"/>
+  <use href="#arrow" fill="#E04B26" transform="rotate(180)"/>
+  <circle r="62" fill="#0E0806"/>
+</svg>
