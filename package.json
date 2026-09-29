@@ -2,6 +2,10 @@
   "name": "precission-landing",
   "private": true,
   "scripts": {
-    "start": "node dev-server.js"
+    "start": "node dev-server.js",
+    "mockups": "node mockups/render.js"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^23.11.1"
   }
 }

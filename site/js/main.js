@@ -7,6 +7,10 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  /* ---------- Idiomas: motor en js/lang.js, textos en js/i18n.js ---------- */
+  const { t } = window.Lang;
+  const onLangChange = { push: window.Lang.onChange };
+
   /* ---------- Nav: estado al scrollear + menú móvil ---------- */
   const nav = document.querySelector('.nav');
   const toggle = document.querySelector('.nav__toggle');
@@ -15,10 +19,12 @@
 
   const setMenu = (open) => {
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    toggle.setAttribute('aria-label', t(open ? 'a11y.closeMenu' : 'a11y.openMenu'));
     mobileMenu.hidden = !open;
   };
   toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+  onLangChange.push(() => setMenu(toggle.getAttribute('aria-expanded') === 'true'));
+  setMenu(false);
   mobileMenu.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
   window.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
 
@@ -58,6 +64,34 @@
   }, { threshold: 0.6 });
   document.querySelectorAll('[data-count]').forEach((el) => counterObserver.observe(el));
 
+  /* ---------- Carrusel de clientes ---------- */
+  // Repite el grupo de logos hasta cubrir la pantalla y lo duplica: la animación recorre
+  // exactamente la mitad del track, así el loop no tiene saltos.
+  const logos = document.querySelector("[data-logos]");
+  if (logos && !reduceMotion) {
+    const track = logos.querySelector(".logos__track");
+    const group = track.querySelector(".logos__group");
+    const buildLogos = () => {
+      track.querySelectorAll(".logos__group:not(:first-child)").forEach((g) => g.remove());
+      const perHalf = Math.max(1, Math.ceil(window.innerWidth / group.offsetWidth));
+      for (let i = 1; i < perHalf * 2; i++) {
+        const clone = group.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        clone.querySelectorAll("img").forEach((img) => { img.alt = ""; img.removeAttribute("data-i18n-attr"); });
+        track.appendChild(clone);
+      }
+      // Velocidad constante (~60 px/s) sin importar cuántos logos haya
+      track.style.setProperty("--duration", `${(group.offsetWidth * perHalf) / 60}s`);
+    };
+    buildLogos();
+    let lastWidth = window.innerWidth;
+    window.addEventListener("resize", () => {
+      if (window.innerWidth === lastWidth) return;
+      lastWidth = window.innerWidth;
+      buildLogos();
+    });
+  }
+
   /* ---------- Spotlight en tarjetas de servicios ---------- */
   document.querySelectorAll('.card').forEach((card) => {
     card.addEventListener('pointermove', (e) => {
@@ -68,12 +102,22 @@
   });
 
   /* ---------- Manifiesto: palabras que se encienden ---------- */
+  // El texto sale del diccionario; las palabras entre *asteriscos* se destacan
   const manifesto = document.querySelector('[data-words]');
-  const accentWords = ['exacto', 'seguro,', 'escalable', 'durar.'];
-  manifesto.innerHTML = manifesto.textContent.trim().split(/\s+/)
-    .map((w) => `<span class="w${accentWords.includes(w) ? ' accent' : ''}">${w}</span>`)
-    .join(' ');
-  const words = [...manifesto.querySelectorAll('.w')];
+  let words = [];
+  const buildManifesto = () => {
+    manifesto.replaceChildren();
+    String(t(manifesto.dataset.words)).trim().split(/\s+/).forEach((raw, i) => {
+      const accent = /^\*.+\*$/.test(raw);
+      const span = document.createElement('span');
+      span.className = accent ? 'w accent' : 'w';
+      span.textContent = accent ? raw.slice(1, -1) : raw;
+      if (i) manifesto.append(' ');
+      manifesto.append(span);
+    });
+    words = [...manifesto.querySelectorAll('.w')];
+  };
+  buildManifesto();
 
   /* ---------- Links activos en el nav ---------- */
   const navLinks = [...document.querySelectorAll('.nav__links a[href^="#"]:not(.btn)')];
@@ -145,6 +189,7 @@
     if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
   }, { passive: true });
   window.addEventListener('resize', onScroll);
+  onLangChange.push(() => { buildManifesto(); onScroll(); });
   onScroll();
 
   /* ---------- Parallax del hero con el mouse ---------- */
@@ -158,6 +203,36 @@
       blobs.forEach((b, i) => { b.style.translate = `${x * (i ? -30 : 30)}px ${y * (i ? -30 : 30)}px`; });
     });
   }
+
+  /* ---------- Click en el logo: repetir la animación del isotipo ---------- */
+  // Las flechas vuelven a su posición inicial y se reconectan cuando el scroll llega al hero.
+  if (!reduceMotion) {
+    let replayId = 0;
+    document.querySelectorAll('a.brand[href="#inicio"]').forEach((link) => {
+      link.addEventListener('click', () => {
+        const id = ++replayId;
+        heroMark.classList.add('is-reset');
+        const started = performance.now();
+        const waitForHero = () => {
+          if (id !== replayId) return; // hubo otro click: manda el último
+          const arrived = window.scrollY < window.innerHeight * 0.25;
+          if (!arrived && performance.now() - started < 2000) return requestAnimationFrame(waitForHero);
+          heroMark.getBoundingClientRect(); // fuerza a aplicar el estado inicial antes de animar
+          heroMark.classList.remove('is-reset');
+        };
+        requestAnimationFrame(() => requestAnimationFrame(waitForHero));
+      });
+    });
+  }
+
+  /* ---------- WhatsApp: mensaje precargado según el idioma ---------- */
+  // El número sale del href del HTML (https://wa.me/<número>); el texto, del diccionario.
+  const whatsappLinks = [...document.querySelectorAll('[data-whatsapp]')];
+  const setWhatsApp = () => whatsappLinks.forEach((a) => {
+    a.href = `${a.href.split('?')[0]}?text=${encodeURIComponent(t('whatsapp.message'))}`;
+  });
+  setWhatsApp();
+  onLangChange.push(setWhatsApp);
 
   /* ---------- Formulario de contacto (solo front) ---------- */
   const form = document.getElementById('contactForm');
@@ -189,10 +264,10 @@
     console.info('[contacto] datos listos para enviar:', data);
 
     submitBtn.classList.add('is-loading');
-    submitLabel.textContent = 'Enviando…';
+    submitLabel.textContent = t('contact.sending');
     setTimeout(() => {
       submitBtn.classList.remove('is-loading');
-      submitLabel.textContent = 'Enviar mensaje';
+      submitLabel.textContent = t('contact.submit');
       success.hidden = false;
       form.reset();
     }, 900);
