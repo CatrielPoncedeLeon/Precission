@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-30T16:12:26.153Z",
+  "title": "Design System: Precission",
+  "extensions": {
+    "colorMeta": {
+      "precission-orange": {
+        "role": "primary",
+        "displayName": "Precission Orange",
+        "canonical": "oklch(61.6% 0.192 34.8)",
+        "tonalRamp": [
+          "oklch(15% 0.048 34.8)",
+          "oklch(26% 0.102 34.8)",
+          "oklch(37% 0.173 34.8)",
+          "oklch(48% 0.192 34.8)",
+          "oklch(59% 0.192 34.8)",
+          "oklch(70% 0.192 34.8)",
+          "oklch(82% 0.115 34.8)",
+          "oklch(95% 0.048 34.8)"
+        ]
+      },
+      "peach": {
+        "role": "secondary",
+        "displayName": "Peach",
+        "canonical": "oklch(83.3% 0.077 44)",
+        "tonalRamp": [
+          "oklch(15% 0.019 44)",
+          "oklch(26% 0.041 44)",
+          "oklch(37% 0.069 44)",
+          "oklch(48% 0.077 44)",
+          "oklch(59% 0.077 44)",
+          "oklch(70% 0.077 44)",
+          "oklch(82% 0.046 44)",
+          "oklch(95% 0.019 44)"
+        ]
+      },
+      "warm-black": {
+        "role": "neutral",
+        "displayName": "Warm Black",
+        "canonical": "oklch(14.2% 0.012 43)",
+        "tonalRamp": [
+          "oklch(15% 0.003 43)",
+          "oklch(26% 0.006 43)",
+          "oklch(37% 0.011 43)",
+          "oklch(48% 0.012 43)",
+          "oklch(59% 0.012 43)",
+          "oklch(70% 0.012 43)",
+          "oklch(82% 0.007 43)",
+          "oklch(95% 0.003 43)"
+        ]
+      },
+      "warm-black-raised": {
+        "role": "neutral",
+        "displayName": "Warm Black Raised",
+        "canonical": "oklch(17.6% 0.025 42.3)",
+        "tonalRamp": [
+          "oklch(15% 0.006 42.3)",
+          "oklch(26% 0.013 42.3)",
+          "oklch(37% 0.023 42.3)",
+          "oklch(48% 0.025 42.3)",
+          "oklch(59% 0.025 42.3)",
+          "oklch(70% 0.025 42.3)",
+          "oklch(82% 0.015 42.3)",
+          "oklch(95% 0.006 42.3)"
+        ]
+      },
+      "deep-brown": {
+        "role": "neutral",
+        "displayName": "Deep Brown",
+        "canonical": "oklch(25.1% 0.062 38.3)",
+        "tonalRamp": [
+          "oklch(15% 0.015 38.3)",
+          "oklch(26% 0.033 38.3)",
+          "oklch(37% 0.056 38.3)",
+          "oklch(48% 0.062 38.3)",
+          "oklch(59% 0.062 38.3)",
+          "oklch(70% 0.062 38.3)",
+          "oklch(82% 0.037 38.3)",
+          "oklch(95% 0.015 38.3)"
+        ]
+      },
+      "rust-brown": {
+        "role": "neutral",
+        "displayName": "Rust Brown",
+        "canonical": "oklch(33.9% 0.087 38)",
+        "tonalRamp": [
+          "oklch(15% 0.022 38)",
+          "oklch(26% 0.046 38)",
+          "oklch(37% 0.078 38)",
+          "oklch(48% 0.087 38)",
+          "oklch(59% 0.087 38)",
+          "oklch(70% 0.087 38)",
+          "oklch(82% 0.052 38)",
+          "oklch(95% 0.022 38)"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "canonical": "oklch(95.2% 0.014 57.6)",
+        "tonalRamp": [
+          "oklch(15% 0.004 57.6)",
+          "oklch(26% 0.007 57.6)",
+          "oklch(37% 0.013 57.6)",
+          "oklch(48% 0.014 57.6)",
+          "oklch(59% 0.014 57.6)",
+          "oklch(70% 0.014 57.6)",
+          "oklch(82% 0.008 57.6)",
+          "oklch(95% 0.004 57.6)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(93.5% 0.017 56.2)",
+        "tonalRamp": [
+          "oklch(15% 0.004 56.2)",
+          "oklch(26% 0.009 56.2)",
+          "oklch(37% 0.015 56.2)",
+          "oklch(48% 0.017 56.2)",
+          "oklch(59% 0.017 56.2)",
+          "oklch(70% 0.017 56.2)",
+          "oklch(82% 0.010 56.2)",
+          "oklch(95% 0.004 56.2)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0.000 0)",
+          "oklch(26% 0.000 0)",
+          "oklch(37% 0.000 0)",
+          "oklch(48% 0.000 0)",
+          "oklch(59% 0.000 0)",
+          "oklch(70% 0.000 0)",
+          "oklch(82% 0.000 0)",
+          "oklch(95% 0.000 0)"
+        ]
+      },
+      "text-dim": {
+        "role": "neutral",
+        "displayName": "Text Dim (cream 66%)"
+      },
+      "text-faint": {
+        "role": "neutral",
+        "displayName": "Text Faint (cream 55%)"
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline (cream 10%)"
+      },
+      "error-soft": {
+        "role": "error",
+        "displayName": "Error Coral"
+      },
+      "error-border": {
+        "role": "error",
+        "displayName": "Error Coral Border"
+      },
+      "whatsapp-green": {
+        "role": "scoped",
+        "displayName": "WhatsApp Green",
+        "canonical": "oklch(76.1% 0.201 149.7)",
+        "tonalRamp": [
+          "oklch(15% 0.050 149.7)",
+          "oklch(26% 0.107 149.7)",
+          "oklch(37% 0.181 149.7)",
+          "oklch(48% 0.201 149.7)",
+          "oklch(59% 0.201 149.7)",
+          "oklch(70% 0.201 149.7)",
+          "oklch(82% 0.121 149.7)",
+          "oklch(95% 0.050 149.7)"
+        ]
+      },
+      "project-portal": {
+        "role": "scoped",
+        "displayName": "Portal Ciudadano Cyan",
+        "canonical": "oklch(68.3% 0.13 229.5)",
+        "tonalRamp": [
+          "oklch(15% 0.033 229.5)",
+          "oklch(26% 0.069 229.5)",
+          "oklch(37% 0.117 229.5)",
+          "oklch(48% 0.130 229.5)",
+          "oklch(59% 0.130 229.5)",
+          "oklch(70% 0.130 229.5)",
+          "oklch(82% 0.078 229.5)",
+          "oklch(95% 0.033 229.5)"
+        ]
+      },
+      "project-portal-soft": {
+        "role": "scoped",
+        "displayName": "Portal Ciudadano Tint"
+      },
+      "project-argos": {
+        "role": "scoped",
+        "displayName": "Argos Green",
+        "canonical": "oklch(71.9% 0.146 157.3)",
+        "tonalRamp": [
+          "oklch(15% 0.036 157.3)",
+          "oklch(26% 0.078 157.3)",
+          "oklch(37% 0.131 157.3)",
+          "oklch(48% 0.146 157.3)",
+          "oklch(59% 0.146 157.3)",
+          "oklch(70% 0.146 157.3)",
+          "oklch(82% 0.088 157.3)",
+          "oklch(95% 0.036 157.3)"
+        ]
+      },
+      "project-argos-soft": {
+        "role": "scoped",
+        "displayName": "Argos Tint"
+      },
+      "project-kine": {
+        "role": "scoped",
+        "displayName": "KineMobile Magenta",
+        "canonical": "oklch(59.2% 0.235 359.2)",
+        "tonalRamp": [
+          "oklch(15% 0.059 359.2)",
+          "oklch(26% 0.125 359.2)",
+          "oklch(37% 0.211 359.2)",
+          "oklch(48% 0.235 359.2)",
+          "oklch(59% 0.235 359.2)",
+          "oklch(70% 0.235 359.2)",
+          "oklch(82% 0.141 359.2)",
+          "oklch(95% 0.059 359.2)"
+        ]
+      },
+      "project-kine-soft": {
+        "role": "scoped",
+        "displayName": "KineMobile Tint"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero title only, revealed line by line."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section, contact and legal titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service cards, method steps, project names."
+      },
+      "accent": {
+        "displayName": "Accent",
+        "purpose": "The single accent phrase in a headline: same Montserrat, peach on dark, orange on paper, followed by the orange stop."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Opening paragraph under a major headline."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Card and section copy in Text Dim."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase eyebrows, card numbers, category chips."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "All button labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "plane-separation",
+        "value": "0 40px 80px -40px rgba(0,0,0,.7)",
+        "purpose": "Lifts a glass panel (the form) off the ground."
+      },
+      {
+        "name": "photo-plane",
+        "value": "0 50px 100px -50px rgba(0,0,0,.9)",
+        "purpose": "Team photo."
+      },
+      {
+        "name": "sheet-card",
+        "value": "0 -1px 0 rgba(14,8,6,.04), 0 30px 80px -40px rgba(58,21,9,.45)",
+        "purpose": "Project cards on the paper sheet; brown-tinted."
+      },
+      {
+        "name": "signal-glow",
+        "value": "0 10px 30px -10px rgba(224,75,38,.7)",
+        "purpose": "Primary buttons at rest."
+      },
+      {
+        "name": "signal-glow-hover",
+        "value": "0 18px 40px -12px rgba(244,185,160,.6)",
+        "purpose": "Primary buttons on hover."
+      },
+      {
+        "name": "logo-plate",
+        "value": "0 20px 40px -24px rgba(0,0,0,.8)",
+        "purpose": "Cream client-logo plates on dark."
+      },
+      {
+        "name": "field-focus-ring",
+        "value": "0 0 0 4px rgba(224,75,38,.18)",
+        "purpose": "Input focus ring."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-precise",
+        "value": "cubic-bezier(.22, 1, .36, 1)",
+        "purpose": "Default easing for every lift, reveal and fill."
+      },
+      {
+        "name": "state-fast",
+        "value": ".3s",
+        "purpose": "Color and border shifts."
+      },
+      {
+        "name": "state-lift",
+        "value": ".4s–.6s",
+        "purpose": "Hover lifts, fills and icon nudges."
+      },
+      {
+        "name": "reveal",
+        "value": "1s",
+        "purpose": "Scroll reveal (30px rise + fade), staggered via --d."
+      },
+      {
+        "name": "hero-line",
+        "value": "1.1s, +.1s stagger",
+        "purpose": "Hero title line reveal."
+      },
+      {
+        "name": "isotype-assembly",
+        "value": "1.6s at .35s; dot .7s at 1.4s",
+        "purpose": "Hero isotype arrows lock together, then the dot appears."
+      },
+      {
+        "name": "blob-drift",
+        "value": "48s–56s alternate",
+        "purpose": "Hero ember blobs only; manifesto and contact blobs are still."
+      },
+      {
+        "name": "orbit-spin",
+        "value": "60s linear infinite",
+        "purpose": "Outer hero ring 60s; inner dashed ring 28s reverse."
+      },
+      {
+        "name": "attention-cue",
+        "value": "3 iterations then stop",
+        "purpose": "WhatsApp pulse (2s delay) and scroll cue (1.6s delay)."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-collapse",
+        "value": "1080px"
+      },
+      {
+        "name": "tablet",
+        "value": "1024px"
+      },
+      {
+        "name": "mobile-lg",
+        "value": "860px"
+      },
+      {
+        "name": "mobile",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main call to action; a peach fill rises from below on hover.",
+      "html": "<button class=\"ds-btn-primary\">Contanos tu proyecto <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-btn-primary{position:relative;display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:999px;border:1px solid transparent;font:600 .95rem/1 Montserrat,\"Segoe UI\",system-ui,sans-serif;letter-spacing:.01em;cursor:pointer;background:#E04B26;color:#fff;overflow:hidden;isolation:isolate;box-shadow:0 10px 30px -10px rgba(224,75,38,.7);transition:transform .4s cubic-bezier(.22,1,.36,1),color .3s,box-shadow .4s cubic-bezier(.22,1,.36,1)}.ds-btn-primary::before{content:\"\";position:absolute;inset:0;z-index:-1;background:#F4B9A0;border-radius:inherit;transform:translateY(101%);transition:transform .5s cubic-bezier(.22,1,.36,1)}.ds-btn-primary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .4s cubic-bezier(.22,1,.36,1)}.ds-btn-primary:hover{color:#0E0806;transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(244,185,160,.6)}.ds-btn-primary:hover::before{transform:translateY(0)}.ds-btn-primary:hover svg{transform:translateX(4px)}.ds-btn-primary:focus-visible{outline:2px solid #F4B9A0;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on dark; border and text warm to peach on hover.",
+      "html": "<button class=\"ds-btn-ghost\">Ver proyectos</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;padding:16px 28px;border-radius:999px;border:1px solid rgba(247,237,230,.25);background:transparent;color:#fff;font:600 .95rem/1 Montserrat,\"Segoe UI\",system-ui,sans-serif;letter-spacing:.01em;cursor:pointer;transition:transform .4s cubic-bezier(.22,1,.36,1),border-color .3s,color .3s}.ds-btn-ghost:hover{border-color:#F4B9A0;color:#F4B9A0;transform:translateY(-2px)}.ds-btn-ghost:focus-visible{outline:2px solid #F4B9A0;outline-offset:3px}"
+    },
+    {
+      "name": "Floating-Label Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Dark-glass input whose label floats up and turns peach on focus.",
+      "html": "<div class=\"ds-field\"><input id=\"ds-n\" placeholder=\" \"><label for=\"ds-n\">Nombre</label></div>",
+      "css": ".ds-field{position:relative;width:320px}.ds-field input{width:100%;box-sizing:border-box;padding:26px 18px 10px;border-radius:14px;border:1px solid rgba(247,237,230,.14);background:rgba(14,8,6,.45);color:#fff;font:400 1rem Inter,\"Segoe UI\",system-ui,sans-serif;transition:border-color .3s,background .3s,box-shadow .3s}.ds-field input:focus{outline:none;border-color:#E04B26;background:rgba(14,8,6,.7);box-shadow:0 0 0 4px rgba(224,75,38,.18)}.ds-field label{position:absolute;left:19px;top:18px;font:500 .98rem Inter,\"Segoe UI\",system-ui,sans-serif;color:rgba(247,237,230,.4);pointer-events:none;transform-origin:0 0;transition:transform .3s cubic-bezier(.22,1,.36,1),color .3s}.ds-field input:focus+label,.ds-field input:not(:placeholder-shown)+label{transform:translateY(-10px) scale(.76);color:#F4B9A0}"
+    },
+    {
+      "name": "Glass Nav Pill",
+      "kind": "nav",
+      "refersTo": "button-small",
+      "description": "Frosted pill holding the nav links (orange underline on hover) and a small primary CTA.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Servicios</a><a href=\"#\" class=\"is-active\">Proyectos</a><a href=\"#\">Equipo</a><a href=\"#\" class=\"ds-nav-cta\">Hablemos</a></nav>",
+      "css": ".ds-nav{display:inline-flex;align-items:center;gap:30px;padding:5px 5px 5px 26px;border-radius:999px;border:1px solid rgba(247,237,230,.08);background:rgba(14,8,6,.42);-webkit-backdrop-filter:blur(14px) saturate(140%);backdrop-filter:blur(14px) saturate(140%)}.ds-nav a{position:relative;color:rgba(247,237,230,.82);text-decoration:none;font:500 .92rem Montserrat,\"Segoe UI\",system-ui,sans-serif;transition:color .3s}.ds-nav a:not(.ds-nav-cta)::after{content:\"\";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#E04B26;transform:scaleX(0);transform-origin:right;transition:transform .4s cubic-bezier(.22,1,.36,1)}.ds-nav a:not(.ds-nav-cta):hover,.ds-nav a.is-active{color:#fff}.ds-nav a:not(.ds-nav-cta):hover::after,.ds-nav a.is-active::after{transform:scaleX(1);transform-origin:left}.ds-nav .ds-nav-cta{padding:11px 20px;border-radius:999px;background:#E04B26;color:#fff;font-weight:600;font-size:.85rem;transition:background .3s,color .3s}.ds-nav .ds-nav-cta:hover{background:#F4B9A0;color:#0E0806}.ds-nav a:focus-visible{outline:2px solid #F4B9A0;outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Language Switcher",
+      "kind": "chip",
+      "refersTo": "lang-toggle-active",
+      "description": "Pill segmented control; the active language is filled orange.",
+      "html": "<div class=\"ds-lang\"><button aria-pressed=\"true\">ES</button><button aria-pressed=\"false\">EN</button></div>",
+      "css": ".ds-lang{display:inline-flex;padding:3px;border-radius:999px;border:1px solid rgba(247,237,230,.1);background:rgba(14,8,6,.42)}.ds-lang button{min-width:38px;padding:7px 10px;border:0;border-radius:999px;background:transparent;color:rgba(247,237,230,.6);font:700 .72rem/1 Montserrat,\"Segoe UI\",system-ui,sans-serif;letter-spacing:.08em;cursor:pointer;transition:color .3s,background .3s}.ds-lang button:hover{color:#fff}.ds-lang button[aria-pressed=\"true\"]{background:#E04B26;color:#fff}.ds-lang button:focus-visible{outline:2px solid #F4B9A0;outline-offset:3px}"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "service-card",
+      "description": "Warm-glass bento card (number, peach line icon, title, dim copy) with an orange glow on hover.",
+      "html": "<article class=\"ds-card\"><span class=\"ds-card-num\">01</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M8 6l-6 6 6 6M16 6l6 6-6 6\"/></svg><h3>Desarrollo de software a medida</h3><p>Plataformas web y sistemas de gestión diseñados alrededor de tus procesos.</p></article>",
+      "css": ".ds-card{position:relative;max-width:360px;padding:36px 32px 34px;border-radius:22px;background:linear-gradient(160deg,rgba(58,21,9,.55),rgba(26,13,8,.9));border:1px solid rgba(247,237,230,.1);color:#F7EDE6;overflow:hidden;isolation:isolate;transition:transform .6s cubic-bezier(.22,1,.36,1),border-color .4s}.ds-card::before{content:\"\";position:absolute;inset:0;z-index:-1;background:radial-gradient(420px circle at 30% 20%,rgba(224,75,38,.28),transparent 60%);opacity:0;transition:opacity .4s}.ds-card:hover{border-color:rgba(244,185,160,.35);transform:translateY(-4px)}.ds-card:hover::before{opacity:1}.ds-card-num{display:block;font:600 .8rem Montserrat,\"Segoe UI\",system-ui,sans-serif;letter-spacing:.15em;color:rgba(247,237,230,.4);margin-bottom:36px}.ds-card svg{width:52px;height:52px;margin-bottom:26px;fill:none;stroke:#F4B9A0;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:transform .6s cubic-bezier(.22,1,.36,1)}.ds-card:hover svg{transform:translateY(-4px) rotate(-6deg)}.ds-card h3{margin:0 0 14px;font:700 1.5rem/1.05 Montserrat,\"Segoe UI\",system-ui,sans-serif;letter-spacing:-.02em;color:#fff}.ds-card p{margin:0;font:400 1rem/1.6 Inter,\"Segoe UI\",system-ui,sans-serif;color:rgba(247,237,230,.66)}"
+    },
+    {
+      "name": "Feature Service Card",
+      "kind": "card",
+      "refersTo": "service-card-feature",
+      "description": "The one orange-filled bento card, with white text and outline tags.",
+      "html": "<article class=\"ds-card-feature\"><h3>Gestión de accesos e identidades</h3><p>IAM y PAM sobre Active Directory, SAP y Google Workspace.</p><ul><li>IAM</li><li>PAM</li></ul></article>",
+      "css": ".ds-card-feature{max-width:420px;padding:36px 32px 34px;border-radius:22px;background:radial-gradient(ellipse at 100% 0%,rgba(244,185,160,.35),transparent 55%),linear-gradient(150deg,#E04B26 0%,#B8391A 100%);color:#fff;transition:transform .6s cubic-bezier(.22,1,.36,1)}.ds-card-feature:hover{transform:translateY(-4px)}.ds-card-feature h3{margin:0 0 14px;font:700 1.6rem/1.05 Montserrat,\"Segoe UI\",system-ui,sans-serif;letter-spacing:-.02em}.ds-card-feature p{margin:0;font:400 1rem/1.6 Inter,\"Segoe UI\",system-ui,sans-serif;color:rgba(255,255,255,.88)}.ds-card-feature ul{display:flex;gap:8px;list-style:none;padding:0;margin:24px 0 0}.ds-card-feature li{padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.4);font:600 .75rem Montserrat,\"Segoe UI\",system-ui,sans-serif;letter-spacing:.06em}"
+    },
+    {
+      "name": "Eyebrow",
+      "kind": "custom",
+      "refersTo": "eyebrow",
+      "description": "Uppercase peach section label with a still orange dot.",
+      "html": "<span class=\"ds-eyebrow\"><i></i>Qué hacemos</span>",
+      "css": ".ds-eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 .78rem Montserrat,\"Segoe UI\",system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#F4B9A0}.ds-eyebrow i{width:8px;height:8px;border-radius:50%;background:#E04B26;}"
+    },
+    {
+      "name": "Project Category Chip",
+      "kind": "chip",
+      "refersTo": "chip-category",
+      "description": "Pill in the project's accent tint, on the paper sheet.",
+      "html": "<span class=\"ds-chip-cat\" style=\"--accent-soft:#D6F1FA\">GovTech · Smart Cities</span>",
+      "css": ".ds-chip-cat{display:inline-block;padding:6px 14px;border-radius:999px;background:var(--accent-soft,#D6F1FA);color:#0E0806;font:600 .75rem Montserrat,\"Segoe UI\",system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Precision Under Ember Light",
+    "overview": "The system is engineering exactness lit by warm light. The interlocking isotype (a white and a Precission Orange arrow locking around a warm-black dot) sets the tone: two exact geometric forms meeting cleanly, on a dark ground that is never neutral. Heavy, tightly tracked Montserrat carries the precision. Granular orange-and-peach light carries the warmth: slow radial blobs, a fixed film-grain layer, glowing accents. Emphasis never changes the typeface: one phrase per headline shifts to peach, and the headline closes on a Precission Orange full stop, a small echo of the isotype's geometry.\n\nDensity is spacious and cinematic. Sections breathe (90–160px vertical padding), headlines are large, and each section has one clear focal point. The page lives almost entirely in the warm-black world, with one deliberate inversion: the Projects section rises as a paper-colored sheet with rounded top corners, so the real product work reads as the page's centerpiece.\n\nMotion is part of the identity (the isotype assembling on load, line-by-line headline reveals, manifesto words lighting up on scroll) but it has to stay in service of the content. The confirmed anti-reference is an **overloaded, noisy** page: so many effects running at once that the content gets lost.",
+    "keyCharacteristics": [
+      "Warm-black ground (never pure #000, never cool gray) with orange and peach as the only light sources.",
+      "One typeface for every headline: the accent phrase changes tone (peach on dark, orange on paper), never family or style, and the closing period is orange.",
+      "Depth from layers of translucent dark glass, not from floating white cards.",
+      "Pills and generous radii everywhere; no sharp corners on interactive elements.",
+      "Film grain over the whole page, matching the brand piece.",
+      "One light \"sheet\" section (Projects) that inverts the palette for emphasis."
+    ],
+    "rules": [
+      {
+        "name": "The Warm Ground Rule",
+        "body": "Every dark surface is a warm black or brown (#0E0806, #1A0D08, #3A1509, #5C2412, or cream-tinted transparency). Neutral grays and pure #000 never appear.",
+        "section": "colors"
+      },
+      {
+        "name": "The Signal-and-Glow Rule",
+        "body": "Orange marks action and state; peach marks accent and light. Don't use peach for a primary action, and don't use orange for body-level accents on dark surfaces.",
+        "section": "colors"
+      },
+      {
+        "name": "The Guest Color Rule",
+        "body": "Project, WhatsApp and error colors are guests. They appear only inside their own component and never leak into Precission's own UI.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Ember Word Rule",
+        "body": "Each headline gets at most one accent phrase, and it usually lands at the end (\"…con precisión.\"), followed by the orange stop. Accents change color only: no italic, no serif, no size bump. Two accents in one headline dilute both.",
+        "section": "typography"
+      },
+      {
+        "name": "The Balanced Line Rule",
+        "body": "Headings and eyebrows use `text-wrap: balance` and paragraphs `text-wrap: pretty`, so no title or lead ends on a single orphaned word. The only deliberate single-word line is the hero's \"precisión.\", which is set as its own line.",
+        "section": "typography"
+      },
+      {
+        "name": "The Readable Floor Rule",
+        "body": "Running copy never drops below 16px (1rem), and every text role, including metadata, labels and legal notes, holds at least 4.5:1 against its surface. Hierarchy between body and metadata comes from size and tone (Text Dim vs Text Faint), never from fading text below AA. Counters use tabular numerals so they do not jitter while counting.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tight Display Rule",
+        "body": "Montserrat at headline sizes and above always takes negative tracking (-0.02em to -0.035em) and a line-height at or below 1.05. Loose display type breaks the precision.",
+        "section": "typography"
+      },
+      {
+        "name": "The Glass-Not-Card Rule",
+        "body": "On dark surfaces, a container is warm-black glass with a hairline border. Opaque light cards appear only on the paper Projects sheet and as the client-logo plates.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Negative-Spread Rule",
+        "body": "Every shadow uses a negative spread about half its blur, so it pools beneath the element instead of haloing around it.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Motion Budget Rule",
+        "body": "At most five things loop on their own at any time: the two hero blobs, the two orbit rings and the client-logo marquee. Everything else moves once (entrance, reveal, the isotype assembly) or only in response to the visitor (hover, scroll-linked manifesto and steps line). Attention cues (the WhatsApp pulse, the scroll cue) play three times and stop.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do keep every dark surface warm (#0E0806 / #1A0D08 / browns); tint borders and transparencies with cream (247, 237, 230), never with white or gray.",
+      "Do give each headline at most one accent phrase in the same Montserrat, peach on dark and orange on paper, and close it with the orange stop (`<span class=\"stop\">.</span>` after the `<em>`).",
+      "Do build dark containers as translucent warm-black glass with hairline borders and 12–20px backdrop blur.",
+      "Do make interactive elements pill-shaped, with a 2–4px lift and a warm color shift on hover, eased on `cubic-bezier(.22, 1, .36, 1)`.",
+      "Do keep project, WhatsApp and error colors scoped to their own components.",
+      "Do honor `prefers-reduced-motion`: turn off drift, grain, marquee and reveal motion and show content in its final state."
+    ],
+    "donts": [
+      "Don't bring back a serif or italic accent inside headlines; the user rejected it as a generic AI-landing tell. Emphasis is color plus the orange stop.",
+      "Don't let the page become overloaded or noisy. New motion or effects must not compete with the existing blobs, grain and marquee for attention, and content always wins.",
+      "Don't add infinite animations, scroll-linked scaling or pulsing glows beyond the hero; they break the Motion Budget Rule.",
+      "Don't use pure black, neutral gray or cool shadows anywhere; shadows are black or brown-tinted with a large negative spread.",
+      "Don't use peach for primary actions or orange for passive accents on dark surfaces.",
+      "Don't introduce sharp corners on interactive elements or containers.",
+      "Don't set Montserrat display sizes with positive tracking or line-height above 1.05."
+    ]
+  }
+}

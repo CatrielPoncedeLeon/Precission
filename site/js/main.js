@@ -124,19 +124,14 @@
   const sections = navLinks.map((a) => document.querySelector(a.getAttribute('href')));
 
   /* ---------- Loop de scroll ---------- */
-  const projects = [...document.querySelectorAll('.project')];
-  const parallaxImgs = [...document.querySelectorAll('[data-parallax]')];
   const steps = document.querySelector('.steps');
   const stepItems = [...document.querySelectorAll('.step')];
-  const stickyEnabled = () => window.matchMedia('(min-width: 861px)').matches;
 
   let ticking = false;
   const onScroll = () => {
     const y = window.scrollY;
     const vh = window.innerHeight;
-    const max = document.documentElement.scrollHeight - vh;
 
-    root.style.setProperty('--progress', max > 0 ? (y / max).toFixed(4) : 0);
     nav.classList.toggle('is-scrolled', y > 20);
     toTop.classList.toggle('is-visible', y > vh);
 
@@ -152,30 +147,6 @@
       const sp = Math.min(Math.max((vh * 0.8 - sr.top) / (vh * 0.5), 0), 1);
       steps.style.setProperty('--fill', sp.toFixed(3));
       stepItems.forEach((s, i) => s.classList.toggle('is-active', sp >= (i + 0.5) / stepItems.length || sp === 1));
-    }
-
-    if (!reduceMotion) {
-      // Cartas apiladas: la de abajo se achica cuando la siguiente la cubre
-      if (stickyEnabled()) {
-        projects.forEach((card, i) => {
-          const next = projects[i + 1];
-          if (!next) { card.style.transform = ''; card.style.filter = ''; return; }
-          const cr = card.getBoundingClientRect();
-          const nr = next.getBoundingClientRect();
-          const overlap = Math.min(Math.max((cr.bottom - nr.top) / cr.height, 0), 1);
-          card.style.transform = `scale(${1 - overlap * 0.06})`;
-          card.style.filter = `brightness(${1 - overlap * 0.12})`;
-        });
-      } else {
-        projects.forEach((card) => { card.style.transform = ''; card.style.filter = ''; });
-      }
-
-      // Parallax suave de mockups
-      parallaxImgs.forEach((img) => {
-        const r = img.getBoundingClientRect();
-        const center = r.top + r.height / 2 - vh / 2;
-        img.style.setProperty('--py', `${(-center * 0.06).toFixed(1)}px`);
-      });
     }
 
     // Link activo

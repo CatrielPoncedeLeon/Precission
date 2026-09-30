@@ -10,7 +10,7 @@
      data-i18n-attr="alt:clave; aria-label:otra.clave".
    - Se permite HTML simple en los valores: <em>, <strong>, <br>.
    - En "manifesto", las palabras entre *asteriscos* se
-     destacan en cursiva.
+     destacan en color durazno.
    - Si falta una clave en un idioma, se usa la del idioma
      por defecto.
    ========================================================= */
@@ -51,7 +51,7 @@ window.I18N = {
         eyebrow: 'Más de 20 años en el mercado de TI',
         title1: 'Tecnología',
         title2: 'construida con',
-        title3: '<em>precisión.</em>',
+        title3: '<em>precisión</em><span class="stop">.</span>',
         lead: 'Desarrollamos software a medida, aplicaciones móviles y soluciones de identidad y accesos para empresas y gobiernos que no pueden darse el lujo de fallar.',
         ctaPrimary: 'Contanos tu proyecto',
         ctaSecondary: 'Ver proyectos',
@@ -70,7 +70,7 @@ window.I18N = {
 
       services: {
         eyebrow: 'Qué hacemos',
-        title: 'Todo lo que tu organización necesita para <em>crecer segura.</em>',
+        title: 'Todo lo que tu organización necesita para <em>crecer segura</em><span class="stop">.</span>',
         s1Title: 'Desarrollo de software a medida',
         s1Text: 'Plataformas web y sistemas de gestión diseñados alrededor de tus procesos, no al revés. Código mantenible, escalable y pensado para durar.',
         s2Title: 'Consultoría',
@@ -85,7 +85,7 @@ window.I18N = {
 
       projects: {
         eyebrow: 'Proyectos',
-        title: 'Soluciones reales, <em>en uso todos los días.</em>',
+        title: 'Soluciones reales, <em>en uso todos los días</em><span class="stop">.</span>',
         aside: 'Del gobierno a la seguridad privada y la salud: productos que diseñamos, construimos y acompañamos en producción.',
         viewProject: 'Ver proyecto',
 
@@ -105,11 +105,11 @@ window.I18N = {
         kineAlt: 'Pantallas de la app KineMobile con ejercicios de rehabilitación',
       },
 
-      manifesto: 'No hacemos software genérico. Hacemos el software *exacto* que tu organización necesita: *seguro,* *escalable* y hecho para *durar.*',
+      manifesto: 'No hacemos software genérico. Hacemos el software *exacto* que tu organización necesita: seguro, escalable y hecho para durar.',
 
       method: {
         eyebrow: 'Cómo trabajamos',
-        title: 'Un proceso claro, <em>de principio a fin.</em>',
+        title: 'Un proceso claro, <em>de principio a fin</em><span class="stop">.</span>',
         step1Title: 'Entendemos',
         step1Text: 'Escuchamos tu negocio, relevamos procesos y definimos objetivos medibles antes de escribir una línea de código.',
         step2Title: 'Diseñamos',
@@ -128,7 +128,7 @@ window.I18N = {
 
       team: {
         eyebrow: 'Nuestro equipo',
-        title: 'Las personas detrás de <em>cada proyecto.</em>',
+        title: 'Las personas detrás de <em>cada proyecto</em><span class="stop">.</span>',
         lead: 'Un equipo que combina experiencia y energía joven, y trabaja cerca de cada cliente desde el Parque Tecnológico del Litoral Centro, en Santa Fe.',
         alt: 'El equipo de Precission frente al Edificio TICs del Parque Tecnológico del Litoral Centro',
         badge: 'Parque Tecnológico del Litoral Centro · Santa Fe',
@@ -145,7 +145,7 @@ window.I18N = {
 
       contact: {
         eyebrow: '¡Escribinos!',
-        title: '¿Tenés un proyecto en mente? <em>Hagámoslo realidad.</em>',
+        title: '¿Tenés un proyecto en mente? <em>Hagámoslo realidad</em><span class="stop">.</span>',
         lead: 'Envianos tus datos y pronto nos contactaremos con vos. Sin compromiso: primero entendemos lo que necesitás.',
         location: 'Santa Fe, Argentina',
         name: 'Nombre',
@@ -170,7 +170,7 @@ window.I18N = {
           description: 'Cómo Precission S.R.L. recolecta, usa y protege los datos personales que nos compartís a través de este sitio, conforme a la Ley 25.326.',
         },
         eyebrow: 'Legal',
-        title: 'Política de <em>privacidad.</em>',
+        title: 'Política de <em>privacidad</em><span class="stop">.</span>',
         updated: 'Última actualización: 29 de septiembre de 2026',
         intro: 'En Precission cuidamos los datos que nos confiás. Esta política explica qué información recolectamos a través de este sitio, para qué la usamos y cómo podés ejercer tus derechos, conforme a la Ley N° 25.326 de Protección de los Datos Personales y su normativa complementaria.',
         back: 'Volver al sitio',
@@ -246,7 +246,7 @@ window.I18N = {
         eyebrow: 'Over 20 years in the IT industry',
         title1: 'Technology',
         title2: 'built with',
-        title3: '<em>precision.</em>',
+        title3: '<em>precision</em><span class="stop">.</span>',
         lead: 'We build custom software, mobile apps and identity and access solutions for companies and governments that cannot afford to fail.',
         ctaPrimary: 'Tell us about your project',
         ctaSecondary: 'See our work',
@@ -265,7 +265,7 @@ window.I18N = {
 
       services: {
         eyebrow: 'What we do',
-        title: 'Everything your organization needs to <em>grow securely.</em>',
+        title: 'Everything your organization needs to <em>grow securely</em><span class="stop">.</span>',
         s1Title: 'Custom software development',
         s1Text: 'Web platforms and management systems designed around your processes, not the other way around. Maintainable, scalable code built to last.',
         s2Title: 'Consulting',
@@ -280,7 +280,7 @@ window.I18N = {
 
       projects: {
         eyebrow: 'Projects',
-        title: 'Real solutions, <em>used every day.</em>',
+        title: 'Real solutions, <em>used every day</em><span class="stop">.</span>',
         aside: 'From government to private security and healthcare: products we design, build and support in production.',
         viewProject: 'View project',
 
@@ -300,11 +300,11 @@ window.I18N = {
         kineAlt: 'KineMobile app screens with rehabilitation exercises',
       },
 
-      manifesto: "We don't build generic software. We build the *exact* software your organization needs: *secure,* *scalable* and built to *last.*",
+      manifesto: "We don't build generic software. We build the *exact* software your organization needs: secure, scalable and built to last.",
 
       method: {
         eyebrow: 'How we work',
-        title: 'A clear process, <em>from start to finish.</em>',
+        title: 'A clear process, <em>from start to finish</em><span class="stop">.</span>',
         step1Title: 'Understand',
         step1Text: 'We listen to your business, map your processes and set measurable goals before writing a single line of code.',
         step2Title: 'Design',
@@ -323,7 +323,7 @@ window.I18N = {
 
       team: {
         eyebrow: 'Our team',
-        title: 'The people behind <em>every project.</em>',
+        title: 'The people behind <em>every project</em><span class="stop">.</span>',
         lead: 'A team that blends experience with young energy, working closely with every client from the Litoral Centro Technology Park in Santa Fe, Argentina.',
         alt: 'The Precission team in front of the ICT Building at the Litoral Centro Technology Park',
         badge: 'Litoral Centro Technology Park · Santa Fe',
@@ -340,7 +340,7 @@ window.I18N = {
 
       contact: {
         eyebrow: 'Get in touch',
-        title: 'Have a project in mind? <em>Let’s make it happen.</em>',
+        title: 'Have a project in mind? <em>Let’s make it happen</em><span class="stop">.</span>',
         lead: "Send us your details and we'll get back to you soon. No strings attached: first we understand what you need.",
         location: 'Santa Fe, Argentina',
         name: 'Name',
@@ -365,7 +365,7 @@ window.I18N = {
           description: 'How Precission S.R.L. collects, uses and protects the personal data you share through this website, in accordance with Argentine Law 25,326.',
         },
         eyebrow: 'Legal',
-        title: 'Privacy <em>policy.</em>',
+        title: 'Privacy <em>policy</em><span class="stop">.</span>',
         updated: 'Last updated: September 29, 2026',
         intro: 'At Precission we take care of the data you trust us with. This policy explains what information we collect through this website, what we use it for and how you can exercise your rights, in accordance with Argentine Personal Data Protection Law No. 25,326 and related regulations.',
         back: 'Back to the site',
